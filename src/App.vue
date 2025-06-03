@@ -1,30 +1,35 @@
 <script>
 
 import Header from './components/Header.vue'
+import Background from './components/Background.vue'
 import Main from './components/Main.vue'
-import Footer from './components/Footer.vue'
+// import Footer from './components/Footer.vue'
 
 export default {
   components: {
     Header,
+    Background,
     Main,
-    Footer,
+    // Footer,
   }
 }
 
 </script>
 
 <template>
-    <div>
+    <div class="global-container">
+        <div class="background-container">
+            <Background/>
+        </div>
+        <el-container class="el-container">
+            <el-header class="header-container"><Header/></el-header>
+            <el-main class="main-container"><Main/></el-main>
+            <!-- <el-footer><Footer/></el-footer> -->
+        </el-container>
       
-      <el-container>
-        <el-header><Header/></el-header>
-        <el-main><Main/></el-main>
-        <el-footer><Footer/></el-footer>
-      </el-container>
-      
-      <!-- 回到顶部 -->
-      <el-backtop :right="40" :bottom="80" />
+        <!-- 回到顶部 -->
+        <el-backtop :right="40" :bottom="80" />
+
     </div>
 </template>
 
@@ -106,6 +111,19 @@ a:hover {
   border-bottom: dotted;
 }
 
+.a-static {
+    color: #000000;
+    text-decoration: none;
+}
+
+.a-static:hover {
+    border-bottom: none;
+}
+
+.a-fix:hover {
+    border-bottom: none;
+}
+
 p > img {
   width: 80%;
   display: block;
@@ -149,6 +167,116 @@ th, td {
 .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
+}
+
+/* .triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid black;
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid black;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid black;
+    border-bottom: 50px solid transparent;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid black;
+    border-bottom: 50px solid transparent;
+}
+
+.triangle-bottomleft {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid black;
+    border-right: 100px solid transparent;
+}
+ 
+.triangle-bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid black;
+    border-left: 100px solid transparent;
+}
+
+.triangle-topright {
+    width: 0;
+    height: 0;
+    border-top: 100px solid black;
+    border-left: 100px solid transparent; 
+}
+ 
+.triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 100px solid black;
+    border-right: 100px solid transparent;
+} */
+
+</style>
+
+<style scoped>
+
+.global-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.background-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: -1;
+}
+
+.el-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    z-index: 1;
+}
+
+.header-container {
+    width: 100%;
+}
+
+.main-container {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow: auto;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .main-container {
+        padding-left: 8%;
+        padding-right: 8%;
+    }   
 }
 
 </style>

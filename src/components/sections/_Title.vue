@@ -125,7 +125,7 @@ const buttons = [
 </script>
 
 <template>
-  <div class="title-container">
+  <div>
 
     <!-- 最新消息提示 -->
     <el-row justify="center">
@@ -203,16 +203,6 @@ const buttons = [
 </template>
 
 <style scoped>
-
-.title-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: rgba(255, 255, 255, 1.0);
-}
 
 /* 文章标题字体、字间距、居中排布、字号 */
 .paper-title {
