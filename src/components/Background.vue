@@ -1,4 +1,12 @@
 <script lang="ts" setup>
+
+const bg_idx = 2
+const bg_imgs = [
+    './default.jpg',
+    './background/sea.jpg',
+    './background/dark_air.jpg',
+]
+
 </script>
 
 <template>
@@ -7,8 +15,8 @@
             <div class="background-image-container">
                 <img 
                     class="background-image"
-                    src="../assets/background.jpg" 
                     alt="background"
+                    :src="bg_imgs[bg_idx]"
                 />
             </div>
         </div>
