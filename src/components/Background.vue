@@ -1,11 +1,13 @@
 <script lang="ts" setup>
 
-const bg_idx = 2
 const bg_imgs = [
-    './default.jpg',
+    // './default.jpg',
     './background/sea.jpg',
     './background/dark_air.jpg',
+    './background/river.jpg',
 ]
+
+const bg_idx = Math.floor(Math.random() * bg_imgs.length)
 
 </script>
 
