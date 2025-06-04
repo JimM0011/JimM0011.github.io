@@ -41,7 +41,7 @@ export default {
                 <a class="a-fix" href="https://jimm0011.github.io/" target="_blank"><b>Jing Ma<sup>#</sup>&emsp;</b></a>
             </div>
             <div class="paper-links">
-                <a class="paper-link-icon" href="" target="_blank">
+                <a class="paper-link-icon" href="https://jimm0011.github.io/IST-proj/" target="_blank">
                     <img src="https://img.shields.io/badge/Website-Online-27AE60">
                 </a>
                 &ensp;

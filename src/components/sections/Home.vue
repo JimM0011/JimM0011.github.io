@@ -1,10 +1,36 @@
-<script lang="ts" setup>
+<script lang="ts">
+
+export default {
+  data() {
+    return {
+      windowHeight: window.innerHeight
+    }
+  },
+  computed: {
+    cssVars() {
+      return {
+        '--vh': `${this.windowHeight - 60}px`
+      }
+    }
+  },
+  mounted() {
+    window.addEventListener('resize', this.handleResize)
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.handleResize)
+  },
+  methods: {
+    handleResize() {
+      this.windowHeight = window.innerHeight
+    }
+  }
+}
 
 </script>
 
 
 <template>
-    <div class="home-container">
+    <div class="home-container" :style="cssVars">
         <div class="home-background">
             <div class="home-background-blank"></div>
         </div>
@@ -46,8 +72,8 @@
 <style scoped>
 
 .el-icon-github {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,8 +101,9 @@
 }
 
 .home-container {
+    --vh: 600px;
     width: 100%;
-    height: 400px;
+    height: var(--vh);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,7 +112,7 @@
 
 .home-background {
     width: 100%;
-    height: 400px;
+    height: var(--vh);
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -101,7 +128,7 @@
 
 .intro-container {
     width: 100%;
-    height: 400px;
+    height: var(--vh);
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -112,7 +139,7 @@
 
 .intro-toptext {
     width: 100%;
-    height: 10%;
+    height: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,7 +148,7 @@
 
 .intro-avatar-container {
     width: 100%;
-    height: 50%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,7 +180,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     color: #333;
     box-sizing: border-box;
@@ -166,7 +193,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 20px;
     color: #333;
     box-sizing: border-box;
 }
@@ -188,12 +215,12 @@
     }
 
     .intro-toptext {
-        height: 17.5%;
+        height: 25%;
     }
 
     .intro-avatar-container {
         width: 100%;
-        height: 35%;
+        height: 30%;
     }
 
     .intro-name {
