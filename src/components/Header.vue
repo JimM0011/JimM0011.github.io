@@ -57,9 +57,7 @@ const home ={
             </el-menu>
         </div>
 
-        <div class="header-blank">
-
-        </div>
+        <div class="header-blank"></div>
 
     </el-affix>
 </template>
@@ -84,7 +82,7 @@ div {
 <style scoped>
 
 .header-blank {
-    width: 10%;
+    width: 12%;
     height: 100%;
 }
 
@@ -99,7 +97,7 @@ div {
 }
 
 .header-name {
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -120,7 +118,7 @@ div {
 }
 
 .el-menu-container {
-    width: 50%;
+    width: 38%;
     height: 100%;
     display: flex;
     flex-direction: row;
