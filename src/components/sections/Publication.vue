@@ -37,6 +37,8 @@ import Paper_Knowe from './papers/Paper_Knowe.vue';
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    box-sizing: border-box;
+    margin-bottom: 12px;
 }
 
 .publication-container {
@@ -47,6 +49,7 @@ import Paper_Knowe from './papers/Paper_Knowe.vue';
     align-items: center;
     justify-content: flex-start;
     background-color: rgba(255, 255, 255, 1.0);
+    transform: translateY(-20px);
 }
 
 .publication-title {

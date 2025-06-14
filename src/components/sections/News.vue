@@ -90,7 +90,7 @@
     align-items: center;
     justify-content: flex-start;
     padding: 0px 8%;
-    margin: 20px 0px 5px 0px;
+    margin: 20px 0px 12px 0px;
     box-sizing: border-box;
     overflow: auto;
 
@@ -124,6 +124,7 @@
     align-items: center;
     justify-content: flex-start;
     background-color: rgba(255, 255, 255, 1.0);
+    transform: translateY(-10px);
 }
 
 .news-title {

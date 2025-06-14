@@ -122,7 +122,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 15px 8% 0px 8%;
+    padding: 15px 8% 5px 8%;
     box-sizing: border-box;
 }
 
@@ -134,6 +134,7 @@
     align-items: center;
     justify-content: flex-start;
     background-color: rgba(255, 255, 255, 1.0);
+    transform: translateY(-30px);
 }
 
 .activity-title {

@@ -144,6 +144,15 @@
     align-items: center;
     justify-content: flex-start;
     background-color: rgba(255, 255, 255, 1.0);
+    transform: translateY(-40px);
+}
+
+.career-container::after {
+    content: '';
+    width: 100%;
+    height: 40px;
+    transform: translateY(40px);
+    background-color: white;
 }
 
 .career-title {

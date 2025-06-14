@@ -23,7 +23,7 @@ export default {
         </div>
         <div class="welcome-content-container">
             <p>
-                Hi!
+                Hi! 👋
                 I am a Master's student at the School of Artificial Intelligence and Automation (AIA),
                 Huazhong University of Science and Technology (HUST),
                 advised by Prof. <a class="a-fix" href="https://eglxiang.github.io/" target="_blank">Xiang Xiang</a>.
@@ -103,7 +103,7 @@ export default {
     align-items: center;
     justify-content: flex-start;
     box-sizing: border-box;
-    padding: 20px 5% 5px 5%;
+    padding: 20px 5% 10px 5%;
 }
 
 .welcome-container {
