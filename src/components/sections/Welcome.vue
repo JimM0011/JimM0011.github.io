@@ -38,7 +38,7 @@ export default {
                         [<a @click="goAnchor('#paper-PTTA-container')" class="welcome-paper-refer">1</a>]
                     </li>
                     <li>
-                        Black-Box / Edge-to-Device &nbsp;&nbsp; Knowledge Distillation
+                        Black-Box / Cloud-to-Edge &nbsp;&nbsp; Knowledge Distillation
                         &nbsp;&nbsp;
                         [<a @click="goAnchor('#paper-MEKD-container')" class="welcome-paper-refer">2</a>]
                     </li>
