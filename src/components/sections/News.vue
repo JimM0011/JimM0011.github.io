@@ -61,9 +61,8 @@
 }
 
 .news-item-icon {
-    width: 8px;
-    height: auto;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     background-color: black;
     border-radius: 50%;
     margin-right: 10px;
