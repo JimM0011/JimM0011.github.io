@@ -371,6 +371,7 @@ export default {
     font-weight: bold;
     color: #333;
     box-sizing: border-box;
+    padding: 0px 8%;
 }
 
 .intro-maxim {
@@ -383,6 +384,7 @@ export default {
     font-size: 20px;
     color: #333;
     box-sizing: border-box;
+    padding: 0px 8%;
 }
 
 .intro-links {
