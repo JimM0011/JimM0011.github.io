@@ -38,4 +38,13 @@
     background-color: rgba(255, 255, 255, 1.0);
 }
 
+@media (max-width: 768px) {
+    .update-context {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 </style>
