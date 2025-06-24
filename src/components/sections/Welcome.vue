@@ -3,9 +3,22 @@
 export default {
     methods: {
         goAnchor(selector) {
-            document.querySelector(selector).scrollIntoView({
-                behavior: "smooth"
-            });
+            // document.querySelector(selector).scrollIntoView({
+            //     behavior: "smooth"
+            // });
+            const element = document.querySelector(selector);
+
+            if (element) {
+                element.scrollIntoView({
+                    behavior: "smooth",
+                });
+
+                element.classList.add('highlight-flash');
+
+                setTimeout(() => {
+                    element.classList.remove('highlight-flash');
+                }, 3000);
+            }
         },
     }
 }
@@ -45,12 +58,12 @@ export default {
                     <li>
                         Image / Font &nbsp;&nbsp; Generation / Style Transfer
                         &nbsp;&nbsp;
-                        [<a @click="goAnchor('#paper-FGTr-container')" class="welcome-paper-refer">3</a>]
+                        [<a @click="goAnchor('#paper-FGTr-container')" class="welcome-paper-refer">4</a>]
                     </li>
                     <li>
-                        Few-Shot / Hierarchical &nbsp;&nbsp; Incremental Learning
+                        Few-Shot / Hierarchical &nbsp;&nbsp; Incremental / Continual / Lifelong Learning
                         &nbsp;&nbsp;
-                        [<a @click="goAnchor('#paper-Knowe-container')" class="welcome-paper-refer">4</a>]
+                        [<a @click="goAnchor('#paper-Knowe-container')" class="welcome-paper-refer">3</a>]
                     </li>
                 </ul>
             </div>
@@ -59,6 +72,18 @@ export default {
     </div>
 </template>
 
+<style>
+
+@keyframes flash {
+    0%, 100% { background-color: transparent; }
+    50% { background-color: #00000020; }
+}
+
+.highlight-flash {
+    animation: flash 2.0s ease-in-out 1;
+}
+
+</style>
 
 <style scoped>
 

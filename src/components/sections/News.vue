@@ -14,7 +14,7 @@
         <div class="news-context">
             <div class="news-item">
                 <div class="news-item-icon"></div>
-                <div class="news-item-date">05/2025</div>
+                <div class="news-item-date">05 / 2025</div>
                 <div class="news-item-content">
                     One paper (PTTA) accepted by ICML 2025.
                 </div>

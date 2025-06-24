@@ -38,7 +38,8 @@ import Paper_Knowe from './papers/Paper_Knowe.vue';
     align-items: center;
     justify-content: flex-start;
     box-sizing: border-box;
-    margin-bottom: 12px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .publication-container {

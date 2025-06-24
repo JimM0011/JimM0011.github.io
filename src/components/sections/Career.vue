@@ -26,7 +26,7 @@
                 </div>
                 <div class="career-item-role">
                     <b>Master's Research Student,&emsp;</b>
-                    Sep. 2022 ~ Present
+                    Sep. 2022 ~ Jun. 2025
                 </div>
                 <div class="career-item-relationship">
                     Advisor:&ensp;

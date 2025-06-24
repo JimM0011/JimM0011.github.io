@@ -46,9 +46,9 @@ export default {
                     <img src="https://img.shields.io/badge/Website-Online-27AE60">
                 </a>
                 &ensp;
-                <a class="paper-link-icon" href="" target="_blank">
-                    <img src="https://img.shields.io/badge/Arxiv-Preprint-A42C24">
-                </a>
+                <!-- <a class="paper-link-icon" href="" target="_blank">
+                    <img src="https://img.shields.io/badge/Paper-ICML2025-A42C24">
+                </a> -->
             </div>
             <div class="paper-content">
                 <div class="paper-content-detail-button" @click="toggleDetail">
@@ -439,7 +439,7 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 20px 8% 0px 8%;
+    padding: 10px 8% 10px 8%;
 }
 
 </style>

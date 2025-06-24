@@ -148,7 +148,7 @@
     font-weight: bold;
     color: #333;
     box-sizing: border-box;
-    padding: 24px 5% 16px 5%;
+    padding: 16px 5% 16px 5%;
 }
 
 .activity-title-border {

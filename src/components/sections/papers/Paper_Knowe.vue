@@ -51,8 +51,8 @@ export default {
                     <img src="https://img.shields.io/badge/Website-Online-27AE60">
                 </a>
                 &ensp;
-                <a class="paper-link-icon" href="" target="_blank">
-                    <img src="https://img.shields.io/badge/Arxiv-Preprint-A42C24">
+                <a class="paper-link-icon" href="https://link.springer.com/chapter/10.1007/978-3-031-19821-2_12" target="_blank">
+                    <img src="https://img.shields.io/badge/Paper-ECCV2022-A42C24">
                 </a>
             </div>
             <div class="paper-content">
@@ -442,7 +442,7 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 20px 8% 0px 8%;
+    padding: 10px 8% 10px 8%;
 }
 
 </style>
