@@ -5,6 +5,7 @@ import News from './sections/News.vue'
 import Publication from './sections/Publication.vue'
 import Activity from './sections/Activity.vue'
 import Career from './sections/Career.vue'
+import Update from './sections/Update.vue'
 // import Abstract from './sections/Abstract.vue'
 // import Markdown from './sections/Markdown.vue'
 // import BibTeX from './sections/BibTeX.vue'
@@ -29,7 +30,8 @@ export default {
     News,
     Publication,
     Activity,
-    Career
+    Career,
+    Update,
     // Abstract,
     // Markdown,
     // BibTeX,
@@ -59,6 +61,7 @@ export default {
             <Publication/>
             <Activity/>
             <Career/>
+            <Update/>
             <!-- <Carousel/>
             <Video/>
             <Abstract/>
