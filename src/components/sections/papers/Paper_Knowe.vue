@@ -47,7 +47,7 @@ export default {
                 <a class="a-fix" href="https://scholar.google.com/citations?user=ivApfKcAAAAJ" target="_blank">Gregory D. Hager<sup></sup>&emsp;</a>
             </div>
             <div class="paper-links">
-                <a class="paper-link-icon" href="" target="_blank">
+                <a class="paper-link-icon" href="https://github.com/HAIV-Lab/Knowe" target="_blank">
                     <img src="https://img.shields.io/badge/Website-Online-27AE60">
                 </a>
                 &ensp;

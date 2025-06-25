@@ -46,9 +46,9 @@ export default {
                     <img src="https://img.shields.io/badge/Website-Online-27AE60">
                 </a>
                 &ensp;
-                <!-- <a class="paper-link-icon" href="" target="_blank">
+                <a class="paper-link-icon" href="https://icml.cc/virtual/2025/poster/45190" target="_blank">
                     <img src="https://img.shields.io/badge/Paper-ICML2025-A42C24">
-                </a> -->
+                </a>
             </div>
             <div class="paper-content">
                 <div class="paper-content-detail-button" @click="toggleDetail">

@@ -6,7 +6,7 @@
 <template>
     <div class="update-container">
         <div class="update-context">
-            Last updated: &nbsp; 2025-06-24
+            Last updated: &nbsp; 2025-06-25
         </div>
     </div>
 </template>
