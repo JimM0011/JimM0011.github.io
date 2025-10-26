@@ -16,30 +16,36 @@
                 <div class="news-item-icon"></div>
                 <div class="news-item-date">09 / 2025</div>
                 <div class="news-item-content">
-                    🎉 One paper (<a href="https://neurips.cc/virtual/2025/poster/119274" target="_blank">DEM</a>) has been accepted by&nbsp;<a href="https://neurips.cc/Conferences/2025" target="_blank">NeurIPS 2025</a>.
-                    The paper and code are coming soon.
+                    <p>
+                        🎉 One paper (<a href="https://neurips.cc/virtual/2025/poster/119274" target="_blank">DEM</a>) has been accepted by&nbsp;<a href="https://neurips.cc/Conferences/2025" target="_blank">NeurIPS 2025</a>. The paper and code are coming soon.
+                    </p>
                 </div>
             </div>
             <div class="news-item">
                 <div class="news-item-icon"></div>
                 <div class="news-item-date">08 / 2025</div>
                 <div class="news-item-content">
-                    🎉 One paper (<a href="https://ieeexplore.ieee.org/abstract/document/11141522" target="_blank">MEKD-plus</a>) has been accepted by&nbsp;<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34" target="_blank">IEEE T-PAMI</a>.
+                    <p>
+                        🎉 One paper (<a href="https://ieeexplore.ieee.org/abstract/document/11141522" target="_blank">MEKD-plus</a>) has been accepted by&nbsp;<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34" target="_blank">IEEE T-PAMI</a>.
+                    </p>
                 </div>
             </div>
             <div class="news-item">
                 <div class="news-item-icon"></div>
                 <div class="news-item-date">07 / 2025</div>
                 <div class="news-item-content">
-                    The&nbsp;<a href="https://openreview.net/pdf?id=SznX4yic20" target="_blank">paper</a>&nbsp;and&nbsp;<a href="https://github.com/HAIV-Lab/PTTA" target="_blank">code</a>&nbsp;for&nbsp;<a href="https://jimm0011.github.io/PTTA-proj/" target="_blank">PTTA</a>&nbsp;(<a href="https://icml.cc/Conferences/2025" target="_blank">ICML 2025</a>) are publicly available. 
-                    Please refer to the&nbsp;<a href="https://icml.cc/virtual/2025/poster/45190" target="_blank">project page</a>&nbsp;for details.
+                    <p>
+                        🎊 The&nbsp;<a href="https://openreview.net/pdf?id=SznX4yic20" target="_blank">paper</a>&nbsp;and&nbsp;<a href="https://github.com/HAIV-Lab/PTTA" target="_blank">code</a>&nbsp;for&nbsp;<a href="https://jimm0011.github.io/PTTA-proj/" target="_blank">PTTA</a>&nbsp;(<a href="https://icml.cc/Conferences/2025" target="_blank">ICML 2025</a>) are publicly available. Please refer to the&nbsp;<a href="https://icml.cc/virtual/2025/poster/45190" target="_blank">project page</a>&nbsp;for details.
+                    </p>
                 </div>
             </div>
             <div class="news-item">
                 <div class="news-item-icon"></div>
                 <div class="news-item-date">05 / 2025</div>
                 <div class="news-item-content">
-                    🎉 One paper (<a href="https://jimm0011.github.io/PTTA-proj/" target="_blank">PTTA</a>) has been accepted by&nbsp;<a href="https://icml.cc/Conferences/2025" target="_blank">ICML 2025</a>.
+                    <p>
+                        🎉 One paper (<a href="https://jimm0011.github.io/PTTA-proj/" target="_blank">PTTA</a>) has been accepted by&nbsp;<a href="https://icml.cc/Conferences/2025" target="_blank">ICML 2025</a>.
+                    </p>
                 </div>
             </div>
         </div>
@@ -49,6 +55,11 @@
 
 
 <style scoped>
+
+.news-item-content p {
+    margin: 0;
+    padding: 1px 0px 0px 0px;
+}
 
 .news-item-content {
     width: auto;

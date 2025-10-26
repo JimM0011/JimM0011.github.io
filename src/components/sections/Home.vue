@@ -105,7 +105,7 @@ export default {
                 Jing Ma (马靖)
             </div>
             <div class="intro-maxim">
-                Master's student at HAIV Lab, HUST
+                Master's graduate @ HAIV Lab, HUST
             </div>
             <div class="intro-links">
                 <div class="intro-link-item">
