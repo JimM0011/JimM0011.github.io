@@ -34,7 +34,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    font-size: 16px;
+    font-size: 17px;
     color: #333;
     box-sizing: border-box;
     margin-left: 10px;
@@ -53,7 +53,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    font-size: 16px;
+    font-size: 17px;
     color: #555;
     box-sizing: border-box;
     padding: 1px 12px;

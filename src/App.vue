@@ -239,6 +239,7 @@ th, td {
     left: 0px;
     right: 0px;
     bottom: 0px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .background-container {

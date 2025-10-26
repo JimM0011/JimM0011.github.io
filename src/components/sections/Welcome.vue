@@ -113,7 +113,7 @@ export default {
 .welcome-content-container p {
     width: 100%;
     height: auto;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.6;
     color: #555;
     margin: 0;
