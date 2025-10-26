@@ -60,7 +60,7 @@ export default {
           const dropdown = document.getElementById('redbook-item-dropdown');
           if (dropdown) {
             dropdown.style.top = `${rect.bottom + window.scrollY + 3}px`;
-            dropdown.style.left = `${rect.left + window.scrollX + 16.5 - 173}px`;
+            dropdown.style.left = `${rect.left + window.scrollX + 16.5 - 173 - 40}px`;
           }
         }
       }
