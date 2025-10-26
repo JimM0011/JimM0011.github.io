@@ -18,14 +18,14 @@
                 </div>
                 <div class="activity-item-role">
                     Reviewer (
-                        <a  class="a-fix" 
-                            href="https://neurips.cc/Conferences/2024/ProgramCommittee" 
-                            target="_blank"
-                        >2024</a>,&nbsp;
                         <a  class="a-fix"
                             href="https://neurips.cc/Conferences/2025"
                             target="_blank"
-                        >2025</a>
+                        >2025</a>,&nbsp;
+                        <a  class="a-fix" 
+                            href="https://neurips.cc/Conferences/2024/ProgramCommittee" 
+                            target="_blank"
+                        >2024</a>
                     )
                 </div>
             </div>
@@ -51,6 +51,10 @@
                 <div class="activity-item-role">
                     Reviewer (
                         <a  class="a-fix" 
+                            href="https://iclr.cc/Conferences/2026"
+                            target="_blank"
+                        >2026</a>,&nbsp;
+                        <a  class="a-fix" 
                             href="https://iclr.cc/Conferences/2025/Reviewers" 
                             target="_blank"
                         >2025</a>
@@ -60,17 +64,51 @@
 
             <div class="activity-item">
                 <div class="activity-item-name">
-                    International Conference on Artificial Intelligence and Statistics (AISTATS)
+                    Artificial Intelligence and Statistics (AISTATS)
                 </div>
                 <div class="activity-item-role">
                     Reviewer (
-                        <a  class="a-fix" 
-                            href="https://virtual.aistats.org/Conferences/2024/Reviewers" 
+                        <a  class="a-fix"
+                            href="https://virtual.aistats.org/Conferences/2026"
                             target="_blank"
-                        >2024</a>
+                        >2026</a>,&nbsp;
+                        <a  class="a-fix"
+                            href="https://virtual.aistats.org/Conferences/2025/Reviewers#all-reviewer"
+                            target="_blank"
+                        >2025</a>
                     )
                 </div>
             </div>
+
+            <div class="activity-item">
+                <div class="activity-item-name">
+                    Computer Vision and Pattern Recognition (CVPR)
+                </div>
+                <div class="activity-item-role">
+                    Reviewer (
+                        <a  class="a-fix"
+                            href="https://cvpr.thecvf.com/Conferences/2026"
+                            target="_blank"
+                        >2026</a>
+                    )
+                </div>
+            </div>
+
+            <div class="activity-item">
+                <div class="activity-item-name">
+                    IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)
+                </div>
+                <div class="activity-item-role">
+                    Reviewer (
+                        <a  class="a-fix"
+                            href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76"
+                            target="_blank"
+                        >2025</a>
+                    )
+                </div>
+            </div>
+
+            
         </div>
     </div>
 
@@ -89,7 +127,7 @@
     font-size: 16px;
     color: #555;
     box-sizing: border-box;
-    /* padding: 5px 0 0 0; */
+    padding: 3px 0 0 0;
 }
 
 .activity-item-name {
@@ -112,7 +150,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 0 8px 0;
+    padding: 0 0 10px 0;
 }
 
 .activity-context {

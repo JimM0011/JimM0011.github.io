@@ -37,7 +37,7 @@ export default {
         <div class="welcome-content-container">
             <p>
                 Hi! 👋
-                I am a Master's student at the School of Artificial Intelligence and Automation (AIA),
+                I am a Master's graduate of the School of Artificial Intelligence and Automation (AIA),
                 Huazhong University of Science and Technology (HUST),
                 advised by Prof. <a class="a-fix" href="https://eglxiang.github.io/" target="_blank">Xiang Xiang</a>.
                 My research interests lie primarily in machine learning and computer vision, 
