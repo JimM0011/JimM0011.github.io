@@ -254,7 +254,8 @@ th, td {
     position: absolute;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    /* overflow: auto; */
+    overflow: hidden;
     display: flex;
     z-index: 1;
 }

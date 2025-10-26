@@ -4,6 +4,8 @@ export default {
   data() {
     return {
       windowHeight: window.innerHeight,
+      redbookVisible: false,
+      readbookQR: './image_qrcode/redbook.jpg',
       emailVisible: false,
       showCopied: false,
       email: 'jingma0011@gmail.com',
@@ -28,7 +30,7 @@ export default {
     handleResize() {
       this.windowHeight = window.innerHeight
     },
-    copyEmail(text) {
+    copyEmail(text: string) {
       if (navigator.clipboard) {
         navigator.clipboard.writeText(text).then(() => {
           this.showSuccess();
@@ -49,7 +51,21 @@ export default {
         this.showCopied = false;
       }, 2000);
     },
-    changeEmailVisible(visible) {
+    changeRedbookVisible(visible: boolean) {
+      this.redbookVisible = visible;
+      if (visible) {
+        const redbookIcon = document.getElementById('el-icon-redbook-id');
+        if (redbookIcon) {
+          const rect = redbookIcon.getBoundingClientRect();
+          const dropdown = document.getElementById('redbook-item-dropdown');
+          if (dropdown) {
+            dropdown.style.top = `${rect.bottom + window.scrollY + 3}px`;
+            dropdown.style.left = `${rect.left + window.scrollX + 16.5 - 173}px`;
+          }
+        }
+      }
+    },
+    changeEmailVisible(visible: boolean) {
       this.emailVisible = visible;
       if (visible) {
         const emailIcon = document.getElementById('el-icon-email-id');
@@ -60,10 +76,10 @@ export default {
             dropdown.style.top = `${rect.bottom + window.scrollY + 3}px`;
             dropdown.style.left = `${rect.left + window.scrollX + 20 - 100}px`;
           }
-        }  
+        }
       }
     },
-    changeGithubVisible(visible) {
+    changeGithubVisible(visible: boolean) {
       this.githubVisible = visible;
       if (visible) {
         const githubIcon = document.getElementById('el-icon-github-id');
@@ -136,6 +152,18 @@ export default {
                             alt="email"
                         >
                     </div>
+                    <div 
+                        class="el-icon-redbook-container"
+                        @mouseenter="changeRedbookVisible(true)"
+                        @mouseleave="changeRedbookVisible(false)"
+                    >
+                        <img 
+                            id="el-icon-redbook-id"
+                            class="el-icon-redbook"
+                            src="../../assets/icon/redbook.svg"
+                            alt="redbook"
+                        >
+                    </div>
                 </div>
             </div>
         </div>
@@ -156,6 +184,19 @@ export default {
     >
       <div class="email-item-context">
         {{ email }}
+      </div>
+    </div>
+
+    <div 
+        v-show="redbookVisible"
+        id="redbook-item-dropdown"
+    >
+      <div class="redbook-item-context">
+        <img
+            class="redbook-item-context-image"
+            alt="redbook-qr"
+            :src="readbookQR"
+          >
       </div>
     </div>
 
@@ -192,7 +233,14 @@ export default {
     100% { opacity: 0; }
 }
 
-.email-item-context, .github-item-context {
+.redbook-item-context-image {
+    width: 330px;
+    height: 405px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.redbook-item-context, .email-item-context, .github-item-context {
     width: 100%;
     height: 100%;
     display: flex;
@@ -204,7 +252,11 @@ export default {
     padding-bottom: 4px;
 }
 
-#email-item-dropdown, #github-item-dropdown {
+.redbook-item-context {
+    padding: 5px;
+}
+
+#redbook-item-dropdown, #email-item-dropdown, #github-item-dropdown {
     position: absolute;
     top: 0;
     left: 0;
@@ -224,6 +276,32 @@ export default {
 
 #github-item-dropdown {
     width: 230px;
+}
+
+#redbook-item-dropdown {
+    width: 346px;
+    height: 425px;
+}
+
+.el-icon-redbook {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.el-icon-redbook-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0px 5px;
 }
 
 .el-icon-email {
@@ -247,17 +325,6 @@ export default {
     margin: 0px 5px;
 }
 
-.el-icon-github-container {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin: 0px 5px;
-}
-
 .el-icon-github {
     width: 35px;
     height: 35px;
@@ -267,6 +334,17 @@ export default {
     justify-content: center;
     cursor: pointer;
     object-fit: contain;
+}
+
+.el-icon-github-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0px 5px;
 }
 
 .intro-link-item a {
