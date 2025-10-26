@@ -12,7 +12,7 @@ import Paper_Knowe from './papers/Paper_Knowe.vue';
 <template>
     <div class="publication-container">
         <div class="publication-title">
-            Publications
+            Selected Publications
         </div>
         <div class="publication-title-border">
             <div></div>
