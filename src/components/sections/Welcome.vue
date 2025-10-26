@@ -2,7 +2,7 @@
 
 export default {
     methods: {
-        goAnchor(selector) {
+        goAnchor(selector: any) {
             // document.querySelector(selector).scrollIntoView({
             //     behavior: "smooth"
             // });
@@ -67,6 +67,11 @@ export default {
                     </li>
                 </ul>
             </div>
+            <p>
+                If you are interested in my research / potential collaboration,
+                please feel free to reach out via <b>Email</b> or leave me a message on <b>Rednote</b>.
+                I will respond promptly.
+            </p>
             
         </div>
     </div>
@@ -107,7 +112,7 @@ export default {
     color: #555;
     box-sizing: border-box;
     margin: 0;
-    padding: 5px 3.1% 0 3.1%;
+    padding: 5px 3.1% 5px 3.1%;
 }
 
 .welcome-content-container p {
