@@ -1,4 +1,4 @@
-<!-- PTTA: Purifying Malicious Samples for Test-Time Model Adaptation -->
+<!-- Decoupled Entropy Minimization -->
 
 <script lang="ts">
 
@@ -23,18 +23,18 @@ export default {
 
 
 <template>
-    <div class="paper-container" id="paper-PTTA-container">
+    <div class="paper-container" id="paper-DEM-container">
         <div class="paper-border"></div>
         <div class="paper-context">
             <div class="paper-title">
                 <a 
                     class="a-fix" 
-                    href="https://icml.cc/Conferences/2025"
+                    href="https://neurips.cc/Conferences/2025"
                     target="_blank"
                 >
-                    [ICML 2025]
+                    [NeurIPS 2025]
                 </a>
-                PTTA: Purifying Malicious Samples for Test-Time Model Adaptation
+                Decoupled Entropy Minimization
             </div>
             <div class="paper-authors">
                 <a class="a-fix" href="https://jimm0011.github.io/" target="_blank"><b>Jing Ma<sup>*</sup></b>&emsp;</a>
@@ -42,12 +42,12 @@ export default {
                 <a class="a-fix" href="https://eglxiang.github.io/" target="_blank">Xiang Xiang<sup>*#</sup>&emsp;</a>
             </div>
             <div class="paper-links">
-                <a class="paper-link-icon" href="https://jimm0011.github.io/PTTA-proj/" target="_blank">
+                <a class="paper-link-icon" href="https://jimm0011.github.io/DEM-proj/" target="_blank">
                     <img src="https://img.shields.io/badge/Website-Online-27AE60">
                 </a>
                 &ensp;
-                <a class="paper-link-icon" href="https://icml.cc/virtual/2025/poster/45190" target="_blank">
-                    <img src="https://img.shields.io/badge/Paper-ICML2025-A42C24">
+                <a class="paper-link-icon" href="https://arxiv.org/abs/2511.03256" target="_blank">
+                    <img src="https://img.shields.io/badge/Paper-NeurIPS2025-A42C24">
                 </a>
             </div>
             <div class="paper-content">
@@ -65,7 +65,7 @@ export default {
                                 TL;DR (Too Long; Didn't Read):
                             </div>
                             <div class="paper-content-detail-tldr-context">
-                                Rather than selecting and discarding malicious samples for test-time model adaptation, why not purify them into benign ones?
+                                
                             </div>
                         </div>
                         <div class="paper-content-detail-others-container">
@@ -120,7 +120,7 @@ export default {
                                     v-if="chosenDetail === 0" 
                                     class="paper-content-detail-others-context"
                                 >
-                                    <p>Test-Time Adaptation (TTA) enables deep neural networks to adapt to arbitrary distributions during inference. Existing TTA algorithms generally tend to select benign samples that help achieve robust online prediction and stable self-training. Although malicious samples that would undermine the model's optimization should be filtered out, it also leads to a waste of test data. To alleviate this issue, we focus on how to make full use of the malicious test samples for TTA by transforming them into benign ones, and propose a plug-and-play method, PTTA. The core of our solution lies in the purification strategy, which retrieves benign samples having opposite effects on the objective function to perform Mixup with malicious samples, based on a saliency indicator for encoding benign and malicious data. This strategy results in effective utilization of the information in malicious samples and an improvement of the models' online test accuracy. In this way, we can directly apply the purification loss to existing TTA algorithms without the need to carefully adjust the sample selection threshold. Extensive experiments on four types of TTA tasks as well as classification, segmentation, and adversarial defense demonstrate the effectiveness of our method.</p>
+                                    <p>Entropy Minimization (EM) is beneficial to reducing class overlap, bridging domain gap, and restricting uncertainty for various tasks in machine learning, yet its potential is limited. To study the internal mechanism of EM, we reformulate and decouple the classical EM into two parts with opposite effects: cluster aggregation driving factor (CADF) rewards dominant classes and prompts a peaked output distribution, while gradient mitigation calibrator (GMC) penalizes high-confidence classes based on predicted probabilities. Furthermore, we reveal the limitations of classical EM caused by its coupled formulation: 1) reward collapse impedes the contribution of high-certainty samples in the learning process, and 2) easy-class bias induces misalignment between output distribution and label distribution. To address these issues, we propose Adaptive Decoupled Entropy Minimization (AdaDEM), which normalizes the reward brought from CADF and employs a marginal entropy calibrator (MEC) to replace GMC. AdaDEM outperforms DEM*, an upper-bound variant of classical EM, and achieves superior performance across various imperfectly supervised learning tasks in noisy and dynamic environments.</p>
                                 </div>
                             </transition>
                             <transition name="change">
@@ -128,9 +128,7 @@ export default {
                                     v-if="chosenDetail === 1" 
                                     class="paper-content-detail-others-context"
                                 >
-                                    <p>How can deep neural networks evolve through self-supervision without human intervention? This is a recent research trend, but difficult to solve well due to real-world complexity.</p>
-                                    <p>Our paper identifies the "malicious sample hazards" as an obstacle to model self-evolution. Prior solutions typically select and filter out malicious samples that negatively impact model optimization, which also reduces utilization of already limited data. Rather than discarding them, why not purify malicious samples into benign ones? Surprisingly, we found that superimpose benign samples—which exert the most opposite influence on the objective function—onto malicious samples effectively mitigates these hazards.</p>
-                                    <p>Our findings reveal a new direction: using purification strategies to boost sample utilization during autonomous machine learning. This enables stable and efficient self-supervised evolution of deep neural networks.</p>
+
                                 </div>
                             </transition>
                             <transition name="change">
@@ -138,10 +136,10 @@ export default {
                                     v-if="chosenDetail === 2"
                                     class="paper-content-detail-others-context-cite"
                                 >
-                                    <p>@inproceedings{ma2025ptta,</p>
-                                    <p>&emsp;&ensp;title={PTTA: Purifying Malicious Samples for Test-Time Model Adaptation},</p>
+                                    <p>@article{ma2025decoupled,</p>
+                                    <p>&emsp;&ensp;title={Decoupled Entropy Minimization},</p>
                                     <p>&emsp;&ensp;author={Ma, Jing and Li, Hanlin and Xiang, Xiang},</p>
-                                    <p>&emsp;&ensp;booktitle={Forty-second International Conference on Machine Learning},</p>
+                                    <p>&emsp;&ensp;journal={arXiv preprint arXiv:2511.03256},</p>
                                     <p>&emsp;&ensp;year={2025}</p>
                                     <p>}</p>
                                 </div>

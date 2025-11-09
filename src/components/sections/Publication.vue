@@ -5,6 +5,7 @@ import Paper_IST from './papers/Paper_IST.vue';
 import Paper_MEKD from './papers/Paper_MEKD.vue';
 import Paper_FGTr from './papers/Paper_FGTr.vue';
 import Paper_Knowe from './papers/Paper_Knowe.vue';
+import Paper_DEM from './papers/Paper_DEM.vue';
 
 </script>
 
@@ -18,6 +19,7 @@ import Paper_Knowe from './papers/Paper_Knowe.vue';
             <div></div>
         </div>
         <div class="publication-paper">
+            <Paper_DEM/>
             <Paper_PTTA/>
             <!-- <Paper_IST/> -->
             <Paper_MEKD/>
