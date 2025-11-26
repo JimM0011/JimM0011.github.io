@@ -1,5 +1,15 @@
 <script lang="ts" setup>
 
+import { ref } from 'vue'
+
+const isImageLoaded = ref(false)
+
+// 图片加载完成后触发的事件处理函数
+function handleImageLoad() {
+    // 将 isImageLoaded 设为 true，触发动画
+    isImageLoaded.value = true;
+}
+
 // './default.jpg',
 const bg_imgs = [
     './background/sea.jpg',
@@ -50,6 +60,8 @@ const bg_idx = Math.floor(Math.random() * bg_imgs.length)
                     alt="background"
                     :src="bg_imgs[bg_idx]"
                     :style="bg_styles[bg_idx]"
+                    @load="handleImageLoad"
+                    :class="{ 'image-loaded': isImageLoaded }"
                 />
             </div>
         </div>
@@ -85,12 +97,19 @@ const bg_idx = Math.floor(Math.random() * bg_imgs.length)
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    background-color: white;
 }
 
 .background-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.0s ease-in-out;
+}
+
+.background-image.image-loaded {
+    opacity: 1;
 }
 
 </style>

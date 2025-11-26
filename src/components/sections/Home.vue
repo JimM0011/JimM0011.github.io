@@ -11,6 +11,7 @@ export default {
       email: 'jingma0011@gmail.com',
       githubVisible: false,
       githubAddress: 'https://github.com/JimM0011',
+      isImageLoaded: false, // 标记图片是否已加载完成
     }
   },
   computed: {
@@ -27,6 +28,11 @@ export default {
     window.removeEventListener('resize', this.handleResize)
   },
   methods: {
+    handleImageLoad() {
+      // 图片加载完成后触发的事件处理函数
+      // 将 isImageLoaded 设为 true，触发动画
+      this.isImageLoaded = true;
+    },
     handleResize() {
       this.windowHeight = window.innerHeight
     },
@@ -114,6 +120,8 @@ export default {
                         src="../../assets/avatar.jpg"
                         alt="avatar"
                         class="intro-avatar-img"
+                        @load="handleImageLoad"
+                        :class="{ 'image-loaded': isImageLoaded }"
                     >
                 </div>
             </div>
@@ -436,6 +444,12 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.intro-avatar-img.image-loaded {
+    opacity: 1;
 }
 
 .intro-name {
