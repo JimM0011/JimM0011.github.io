@@ -28,6 +28,7 @@
     "vue3-compare-image": "^1.2.5"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "twikoo": "^1.6.40",
     "vite": "^4.4.6"

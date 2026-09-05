@@ -246,8 +246,7 @@ th, td {
     position: absolute;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    z-index: -1;
+    overflow: visible;
 }
 
 .el-container {
